@@ -6,7 +6,7 @@
   "scripts": {
     "test": "echo no test available"
   },
-  "author": "",
+  "author": "mia-platform",
   "license": "MIT",
   "peerDependencies": {
     "eslint": ">= 3"
