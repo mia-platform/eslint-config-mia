@@ -8,6 +8,7 @@
   },
   "author": "mia-platform",
   "license": "MIT",
+  "private": false,
   "peerDependencies": {
     "eslint": ">= 3"
   }
