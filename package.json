@@ -1,0 +1,14 @@
+{
+  "name": "eslint-config-mia",
+  "version": "1.0.0",
+  "description": "Mia-Platform javascript lint rules",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo no test available"
+  },
+  "author": "",
+  "license": "UNLICENSED",
+  "peerDependencies": {
+    "eslint": ">= 3"
+  }
+}
