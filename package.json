@@ -11,5 +11,13 @@
   "private": false,
   "peerDependencies": {
     "eslint": ">= 3"
-  }
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/MakeItApp/eslint-config-mia.git"
+  },
+  "bugs": {
+    "url": "https://github.com/MakeItApp/eslint-config-mia/issues"
+  },
+  "homepage": "https://github.com/MakeItApp/eslint-config-mia#readme"
 }
