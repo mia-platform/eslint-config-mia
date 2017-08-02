@@ -7,7 +7,7 @@
     "test": "echo no test available"
   },
   "author": "",
-  "license": "UNLICENSED",
+  "license": "MIT",
   "peerDependencies": {
     "eslint": ">= 3"
   }
