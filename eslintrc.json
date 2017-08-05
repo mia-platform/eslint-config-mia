@@ -88,7 +88,7 @@
     "func-name-matching": 2,
     "func-names": 2,
     "func-style": 2,
-    "id-blacklist": ["er", "er", "err", "cb"],
+    "id-blacklist": [2, "e", "er", "err", "cb"],
     "id-length": [2, { "min": 2 }],
     "indent": ["error", 2],
     "jsx-quotes": 2,
