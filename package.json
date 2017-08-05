@@ -1,6 +1,6 @@
 {
   "name": "@makeitapp/eslint-config-mia",
-  "version": "1.1.0",
+  "version": "1.2.0",
   "description": "Mia-Platform javascript lint rules",
   "main": "index.js",
   "scripts": {
