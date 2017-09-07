@@ -168,5 +168,8 @@
     "yield-star-spacing": 2,
     "curly": 2,
     "eqeqeq": 2
-  }
+  },
+  "parserOptions": {
+    "ecmaVersion": 2017
+  } 
 }
