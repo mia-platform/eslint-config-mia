@@ -34,7 +34,7 @@
     "no-new": 2,
     "no-new-func": 2,
     "no-new-wrappers": 2,
-    "no-param-reassign": [1, { "props": true }],
+    "no-param-reassign": [1],
     "no-proto": 2,
     "no-return-assign": 2,
     "no-return-await": 2,
