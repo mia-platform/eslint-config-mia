@@ -1,6 +1,6 @@
 {
   "name": "@mia-platform/eslint-config-mia",
-  "version": "1.7.1",
+  "version": "1.7.2",
   "description": "Mia-Platform javascript lint rules",
   "main": "index.js",
   "scripts": {
