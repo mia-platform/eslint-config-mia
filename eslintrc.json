@@ -119,7 +119,7 @@
     "no-plusplus": [2, { "allowForLoopAfterthoughts": true }],
     "no-tabs": 2,
     "no-trailing-spaces": 2,
-    "no-underscore-dangle": 2,
+    "no-underscore-dangle": [2, { "allow": ["_id"] } ],
     "no-unneeded-ternary": 2,
     "no-whitespace-before-property": 2,
     "nonblock-statement-body-position": 2,
