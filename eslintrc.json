@@ -140,7 +140,6 @@
     "space-unary-ops": 2,
     "spaced-comment": 2,
     "template-tag-spacing": [2, "always"],
-    "arrow-body-style": ["error", "as-needed"],
     "arrow-spacing": 2,
     "generator-star-spacing": 2,
     "no-confusing-arrow": ["error", {"allowParens": true}],
