@@ -11,7 +11,6 @@
     "valid-jsdoc": 2,
     "array-callback-return": 2,
     "block-scoped-var": 2,
-    "complexity": [2, { "max": 5 }],
     "default-case": [2, { "commentPattern": "^skip\\sdefault" }],
     "guard-for-in": 2,
     "no-caller": 2,
@@ -69,7 +68,6 @@
     "array-bracket-spacing": [2, "never"],
     "block-spacing": [2, "always"],
     "brace-style": [2, "1tbs", { "allowSingleLine": true }],
-    "camelcase": [1, { "properties": "always" }],
     "comma-dangle": ["error", {
       "arrays": "always-multiline",
       "objects": "always-multiline",
@@ -161,8 +159,7 @@
     "template-curly-spacing": 2,
     "yield-star-spacing": 2,
     "curly": 2,
-    "eqeqeq": 2,
-    "strict": ["error", "global"]
+    "eqeqeq": 2
   },
   "parserOptions": {
     "ecmaVersion": 2017,
