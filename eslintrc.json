@@ -1,7 +1,10 @@
 {
+  "parserOptions": {
+    "ecmaVersion": 2018
+  },
   "env": {
-    "node": true,
-    "es6": true
+    "es6": true,
+    "node": true
   },
   "extends": "eslint:recommended",
   "rules": {
@@ -83,7 +86,7 @@
     "func-names": "error",
     "func-style": ["error", "declaration", { "allowArrowFunctions": true }],
     "id-blacklist": ["error", "e", "er", "err", "cb"],
-    "id-length": ["error", { "min": "error", "exceptions": ["_"]}],
+    "id-length": ["error", { "min": 2, "exceptions": ["_"]}],
     "indent": ["error", 2],
     "jsx-quotes": "error",
     "key-spacing": "error",
@@ -159,11 +162,5 @@
     "yield-star-spacing": "error",
     "curly": "error",
     "eqeqeq": "error"
-  },
-  "parserOptions": {
-    "ecmaVersion": 2017,
-    "ecmaFeatures": {
-      "experimentalObjectRestSpread": true
-    }
   }
 }
