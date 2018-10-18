@@ -2,22 +2,50 @@
   "name": "@mia-platform/eslint-config-mia",
   "version": "1.7.9",
   "description": "Mia-Platform javascript lint rules",
-  "main": "index.js",
-  "scripts": {
-    "test": "echo no test available"
+  "keyword": [
+    "Mia-Platform JS Style",
+    "code linter",
+    "code style",
+    "eslint",
+    "eslintconfig",
+    "es2018",
+    "javascript",
+    "lint",
+    "policy",
+    "quality",
+    "styleguide",
+    "style linter"
+  ],
+  "homepage": "https://www.mia-platform.eu/",
+  "bugs": {
+    "url": "https://github.com/mia-platform/eslint-config-mia/issues",
+    "email": "core@mia-platform.eu"
   },
-  "author": "mia-platform",
   "license": "MIT",
-  "private": false,
-  "peerDependencies": {
-    "eslint": ">= 3"
-  },
+  "author": "Mia Platform Core Team <core@mia-platform.eu>",
+  "contributors": [
+    "Davide Tantillo <davide.tantillo@mia-platform.eu>",
+    "Tommaso Allevi <tommaso.allevi@mia-platform.eu>",
+    "Jacooo Andrea Giola <jacopo.giola@mia-platform.eu>"
+  ],
+  "main": "index.js",
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/MakeItApp/eslint-config-mia.git"
+    "url": "https://github.com/mia-platform/eslint-config-mia.git"
   },
-  "bugs": {
-    "url": "https://github.com/MakeItApp/eslint-config-mia/issues"
+  "scripts": {
+    "lint": "eslint . --config=eslintrc.json",
+    "test": "npm run lint"
   },
-  "homepage": "https://github.com/MakeItApp/eslint-config-mia#readme"
+  "dependencies": {},
+  "devDependencies": {
+    "eslint": "^5.0.0"
+  },
+  "peerDependencies": {
+    "eslint": ">=5.0.0"
+  },
+  "engines": {
+    "node": ">=8"
+  },
+  "private": false
 }
