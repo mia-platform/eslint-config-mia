@@ -26,7 +26,7 @@
   "contributors": [
     "Davide Tantillo <davide.tantillo@mia-platform.eu>",
     "Tommaso Allevi <tommaso.allevi@mia-platform.eu>",
-    "Jacooo Andrea Giola <jacopo.giola@mia-platform.eu>"
+    "Jacopo Andrea Giola <jacopo.giola@mia-platform.eu>"
   ],
   "main": "index.js",
   "repository": {
@@ -35,11 +35,12 @@
   },
   "scripts": {
     "lint": "eslint . --config=eslintrc.json",
-    "test": "npm run lint"
+    "test": "npm run lint && tap -b tests/*.test.js"
   },
   "dependencies": {},
   "devDependencies": {
-    "eslint": "^5.0.0"
+    "eslint": "^5.0.0",
+    "tap": "^12.0.1"
   },
   "peerDependencies": {
     "eslint": ">=5.0.0"
