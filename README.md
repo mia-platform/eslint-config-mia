@@ -1,4 +1,5 @@
 # eslint-config-mia
+[![Build Status][travis-svg]][travis-page]
 [![npm link][npm-svg]][npm-page]
 [![javascript style guide][standard-mia-svg]][standard-mia]
 
@@ -38,11 +39,13 @@ You want to show that you use this in your project? Feel free to add this badge 
 
 [![javascript style guide][standard-mia-svg]][standard-mia]
 ```markdown
-[![javascript style guide][https://img.shields.io/badge/code_style-standard--mia-orange.svg?style=flat-square]](https://github.com/mia-platform/standard-mia)
+[![javascript style guide](https://img.shields.io/badge/code_style-standard--mia-orange.svg)](https://github.com/mia-platform/standard-mia)
 ```
 
-[npm-svg]: https://img.shields.io/npm/v/@makeitapp/eslint-config-mia.svg?logo=npm&style=flat-square
+[travis-svg]: https://travis-ci.org/mia-platform/eslint-config-mia.svg?branch=master
+[travis-page]: https://travis-ci.org/mia-platform/eslint-config-mia
+[npm-svg]: https://img.shields.io/npm/v/@makeitapp/eslint-config-mia.svg?logo=npm
 [npm-page]: https://www.npmjs.com/package/@makeitapp/eslint-config-mia
-[standard-mia-svg]: https://img.shields.io/badge/code_style-standard--mia-orange.svg?style=flat-square
+[standard-mia-svg]: https://img.shields.io/badge/code_style-standard--mia-orange.svg
 [standard-mia]: https://github.com/mia-platform/standard-mia
 [share-config]: http://eslint.org/docs/developer-guide/shareable-configs
