@@ -3,18 +3,15 @@
   "version": "1.7.9",
   "description": "Mia-Platform javascript lint rules",
   "keyword": [
-    "Mia-Platform JS Style",
-    "code linter",
-    "code style",
-    "eslint",
-    "eslintconfig",
+    "mia-platform",
+    "eslint-config",
+    "linter-config",
+    "ecmascript",
     "es2018",
     "javascript",
-    "lint",
-    "policy",
-    "quality",
-    "styleguide",
-    "style linter"
+    "nodejs",
+    "style-guide",
+    "development"
   ],
   "homepage": "https://www.mia-platform.eu/",
   "bugs": {
@@ -34,19 +31,22 @@
     "url": "https://github.com/mia-platform/eslint-config-mia.git"
   },
   "scripts": {
-    "lint": "eslint . --config=eslintrc.json",
-    "test": "npm run lint && tap -b tests/*.test.js"
+    "checkonly": "! grep -R '\\.only' tests/",
+    "lint": "eslint . --config=eslintrc.json --ignore-path .gitignore",
+    "start": "echo 'unable to start the library directly' && exit 1",
+    "test": "npm run lint && npm run unit && npm run checkonly",
+    "unit": "tap -b -o tap.log tests/*.test.js",
+    "version": "./scripts/update-version.sh ${npm_package_version} && git add CHANGELOG.md"
   },
   "dependencies": {},
   "devDependencies": {
-    "eslint": "^5.0.0",
-    "tap": "^12.0.1"
+    "eslint": "^5.16.0",
+    "tap": "^13.1.2"
   },
   "peerDependencies": {
     "eslint": ">=5.0.0"
   },
   "engines": {
     "node": ">=8"
-  },
-  "private": false
+  }
 }
