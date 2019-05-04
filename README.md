@@ -64,6 +64,7 @@ npm install --save-dev @mia-platform/eslint-config-mia eslint@^#.#.#
 ```
 
 ## How to use it
+
 ESLint Shareable Configs are meant to work with the `extends` feature of the `.eslintrc` file.  
 You can learn more about [Shareable Config][share-config] on the official ESLint website.
 
@@ -88,9 +89,11 @@ object:
 ```
 
 ## Badge
+
 You want to show that you use this in your project? Feel free to add this badge to your README file.
 
 [![javascript style guide][standard-mia-svg]][standard-mia]
+
 ```markdown
 [![javascript style guide](https://img.shields.io/badge/code_style-standard--mia-orange.svg)](https://github.com/mia-platform/eslint-config-mia)
 ```
