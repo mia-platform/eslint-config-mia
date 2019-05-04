@@ -44,7 +44,7 @@
     "tap": "^13.1.2"
   },
   "peerDependencies": {
-    "eslint": ">=5.0.0"
+    "eslint": "^5.16.0"
   },
   "engines": {
     "node": ">=8"
