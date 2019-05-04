@@ -2,6 +2,38 @@
 
 ## TBR
 
+- Update to ecmaVersion 2019 and enable jsx feature
+- Add no-async-promise-executor rule
+- Add no-await-in-loop rule
+- Add no-misleading-character-class rule
+- Add require-atomic-updates rule
+- Add no-else-return rule
+- Add no-octal-escape rule
+- Add no-undefined rule
+- Add camelcase rule for functions
+- Add prefer-object-spread rule as a warning
+- Change no-shadow rule for allowing `fastify`, and `next` variables to
+  be shadowed and disallow the builtin globals one
+- Change no-use-before-define rule for allowing functions to be used before
+  declaration
+- Change func-name rule to be `as-needed`
+- Change id-length rule to ignore properties and allow `i`, `j`, `x`,
+  `y`, `z` names
+- Change max-depth rule to be max 4
+- Change max-len rule for ignoring trailing comments
+- Change max-nested-callbacks rule to be max 4
+- Change max-statements rule to be max 25 and ignoring the top level functions
+- Change max-statements-per-line rule to be max 2
+- Change no-undescore-dangle rule to allow the use for after `this` and `super`
+- Change quote-props rule for ignoring unnecessary quotes and for requiring it
+  for keywords
+- Change quote-props rule for always allow template literals
+- Removed require-await rule
+- Removed no-process-env rule
+- Removed new-cap rule
+- Removed no-inline-comments rule
+- Disable some rules for the *.test.js files
+
 ## v1.7.9 (2018-08-06)
 
 - Removed no-magic-numbers rule
