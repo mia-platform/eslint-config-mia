@@ -9,6 +9,7 @@
 - Add require-atomic-updates rule
 - Add no-else-return rule
 - Add no-octal-escape rule
+- Add strict rule
 - Add no-undefined rule
 - Add camelcase rule for functions
 - Add prefer-object-spread rule as a warning

@@ -1,7 +1,6 @@
 {
   "parserOptions": {
     "ecmaVersion": 2019,
-    "sourceType": "module",
     "ecmaFeatures": {
       "jsx": true
     }
@@ -102,6 +101,7 @@
     "prefer-promise-reject-errors": "error",
     "vars-on-top": "error",
     "wrap-iife": "error",
+    "strict": ["error", "global"],
     "no-delete-var": "error",
     "no-shadow": ["error", {
       "builtinGlobals": true,
@@ -256,7 +256,6 @@
         "default-case": "off",
         "guard-for-in": "off",
         "no-shadow": "off",
-        "no-process-env": "off",
         "id-length": "off",
         "max-depth": "off",
         "max-lines": "off",
