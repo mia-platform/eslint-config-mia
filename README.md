@@ -88,6 +88,17 @@ object:
 }
 ```
 
+Then you can add a new script in your `package.json` like this:
+
+```json
+"scripts": {
+  "lint": "eslint . --ignore-path .gitignore"
+}
+```
+
+The `--ignore-path` can be ignored (🙃) if you already have a `.eslintignore` file. We raccomend to use it
+for avoiding to parse and lint files that will not be committed.
+
 ## Badge
 
 You want to show that you use this in your project? Feel free to add this badge to your README file.
