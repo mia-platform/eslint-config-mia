@@ -113,7 +113,6 @@
     "no-shadow-restricted-names": "error",
     "no-undef": "error",
     "no-undef-init": "error",
-    "no-undefined": "error",
     "no-unused-vars": "error",
     "no-use-before-define": ["error", { "functions": false }],
     "callback-return": ["error", ["callback", "cb", "next", "done"]],
