@@ -12,6 +12,7 @@
 - Add strict rule
 - Add camelcase rule for functions
 - Add prefer-object-spread rule as a warning
+- Change no-extra-parens rule for check only functions calls
 - Change no-shadow rule for allowing `fastify`, and `next` variables to
   be shadowed and disallow the builtin globals one
 - Change no-use-before-define rule for allowing functions to be used before
@@ -25,8 +26,7 @@
 - Change max-statements rule to be max 25 and ignoring the top level functions
 - Change max-statements-per-line rule to be max 2
 - Change no-undescore-dangle rule to allow the use for after `this` and `super`
-- Change quote-props rule for ignoring unnecessary quotes and for requiring it
-  for keywords
+- Change quote-props rule for ignoring unnecessary quotes
 - Change quote-props rule for always allow template literals
 - Removed require-await rule
 - Removed no-process-env rule
