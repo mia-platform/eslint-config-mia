@@ -1,6 +1,6 @@
 # Changes to `eslint-config-mia`
 
-## TBR
+## v2.0.0-rc.0 (2019-05-06)
 
 - Update to ecmaVersion 2019 and enable jsx feature
 - Add no-async-promise-executor rule
