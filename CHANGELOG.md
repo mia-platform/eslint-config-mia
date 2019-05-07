@@ -1,6 +1,6 @@
 # Changes to `eslint-config-mia`
 
-## TBR
+## v2.0.0-rc.2 (2019-05-07)
 
 - Add `_s`, `_p`, `_q`, `_l`, `_sk`, `_st` and `__STATE__` to allowed
   values to the no-underscore-dangle rule for internal usage
