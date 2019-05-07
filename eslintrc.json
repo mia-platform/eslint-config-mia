@@ -148,7 +148,7 @@
     "id-length": ["error", {
       "min": 2,
       "properties": "never",
-      "exceptions": ["_, i, j, x, y, z"]
+      "exceptions": ["_", "i", "j", "x", "y", "z"]
     }],
     "indent": ["error", 2],
     "jsx-quotes": "error",

@@ -1,5 +1,10 @@
 # Changes to `eslint-config-mia`
 
+## v2.0.0-rc.1 (2019-05-06)
+
+- Fix id-length rule to ignore properties and allow `i`, `j`, `x`,
+  `y`, `z` names
+
 ## v2.0.0-rc.0 (2019-05-06)
 
 - Update to ecmaVersion 2019 and enable jsx feature

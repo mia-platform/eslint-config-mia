@@ -11,8 +11,8 @@ async function exportedFunction() {
   }
 
   const promises = []
-  for (const key in object) {
-    if ({}.hasOwnProperty.call(object, key)) {
+  for (const i in object) {
+    if ({}.hasOwnProperty.call(object, i)) {
       promises.push(promise())
     }
   }
