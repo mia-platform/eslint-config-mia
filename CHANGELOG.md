@@ -1,5 +1,10 @@
 # Changes to `eslint-config-mia`
 
+## TBR
+
+- Add `_s`, `_p`, `_q`, `_l`, `_sk`, `_st` and `__STATE__` to allowed
+  values to the no-underscore-dangle rule for internal usage
+
 ## v2.0.0-rc.1 (2019-05-06)
 
 - Fix id-length rule to ignore properties and allow `i`, `j`, `x`,
