@@ -1,5 +1,40 @@
 # Changes to `eslint-config-mia`
 
+## TBR
+
+- Update to ecmaVersion 2019 and enable jsx feature
+- Add no-async-promise-executor rule
+- Add no-await-in-loop rule
+- Add no-misleading-character-class rule
+- Add require-atomic-updates rule
+- Add no-else-return rule
+- Add no-octal-escape rule
+- Add strict rule
+- Add camelcase rule for functions
+- Add prefer-object-spread rule as a warning
+- Change no-extra-parens rule for check only functions calls
+- Change no-shadow rule for allowing `fastify`, and `next` variables to
+  be shadowed and disallow the builtin globals one
+- Change no-use-before-define rule for allowing functions to be used before
+  declaration
+- Change func-name rule to be `as-needed`
+- Change id-length rule to ignore properties and allow `i`, `j`, `x`,
+  `y`, `z` names
+- Change max-depth rule to be max 4
+- Change max-len rule for ignoring trailing comments
+- Change max-nested-callbacks rule to be max 4
+- Change max-statements rule to be max 25 and ignoring the top level functions
+- Change max-statements-per-line rule to be max 2
+- Change no-undescore-dangle rule to allow the use for after `this`, `super` and
+  for `_s`, `_p`, `_q`, `_l`, `_sk`, `_st` and `__STATE__` variables for internal use
+- Change quote-props rule for ignoring unnecessary quotes
+- Change quote-props rule for always allow template literals
+- Removed require-await rule
+- Removed no-process-env rule
+- Removed new-cap rule
+- Removed no-inline-comments rule
+- Disable some rules for the *.test.js files
+
 ## v2.0.0-rc.2 (2019-05-07)
 
 - Add `_s`, `_p`, `_q`, `_l`, `_sk`, `_st` and `__STATE__` to allowed
