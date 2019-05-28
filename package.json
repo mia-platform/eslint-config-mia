@@ -41,7 +41,7 @@
   "dependencies": {},
   "devDependencies": {
     "eslint": "^5.16.0",
-    "tap": "^13.1.2"
+    "tap": "^14.2.0"
   },
   "peerDependencies": {
     "eslint": "^5.16.0"
