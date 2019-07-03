@@ -81,7 +81,7 @@
     "no-octal-escape": "error",
     "no-param-reassign": "error",
     "no-proto": "error",
-    "no-redeclare": "error",
+    "no-redeclare": ["error", { "builtinGlobals": false }],
     "no-return-assign": "error",
     "no-return-await": "error",
     "no-script-url": "error",
