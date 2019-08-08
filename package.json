@@ -35,13 +35,13 @@
     "lint": "eslint . --config=eslintrc.json --ignore-path .gitignore",
     "start": "echo 'unable to start the library directly' && exit 1",
     "test": "npm run lint && npm run unit && npm run checkonly",
-    "unit": "tap -b -o tap.log tests/*.test.js",
+    "unit": "tap --no-esm -b -o tap.log tests/*.test.js",
     "version": "./scripts/update-version.sh ${npm_package_version} && git add CHANGELOG.md"
   },
   "dependencies": {},
   "devDependencies": {
-    "eslint": "^6.0.1",
-    "tap": "^14.4.0"
+    "eslint": "^6.1.0",
+    "tap": "^14.6.1"
   },
   "peerDependencies": {
     "eslint": ">=5.16.0"
