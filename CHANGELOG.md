@@ -6,6 +6,10 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 ## Unreleased
 
+### Added
+
+- Add support for ECMAScript 2020 syntax
+
 ### Changed
 
 - Update eslint 6.1.0 -> 6.8.0
