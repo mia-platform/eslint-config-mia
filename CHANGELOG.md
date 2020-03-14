@@ -6,6 +6,11 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 ## Unreleased
 
+### Changed
+
+- Update eslint 6.1.0 -> 6.8.0
+- Update minimum version of eslint as peerDependency to 6.8.0
+
 ### Removed
 
 - Dropped support for Node 8
