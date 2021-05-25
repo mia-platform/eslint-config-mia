@@ -6,7 +6,7 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 ## Unreleased
 
-### Added
+### BREAKING CHANGES
 
 - Add new import order to be more strictly
 
