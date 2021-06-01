@@ -255,11 +255,7 @@
       "groups": [
         ["builtin", "external"]
       ],
-      "newlines-between": "always",
-      "alphabetize": {
-        "order": "asc",
-        "caseInsensitive": true
-      }
+      "newlines-between": "always"
     }],
     "symbol-description": "error",
     "template-curly-spacing": "error",
