@@ -244,7 +244,16 @@
     "object-shorthand": "error",
     "prefer-arrow-callback": ["error", { "allowNamedFunctions": true }],
     "prefer-const": "error",
-    "prefer-destructuring": "error",
+    "prefer-destructuring": ["error", {
+      "VariableDeclarator": {
+        "array": true,
+        "object": true
+      },
+      "AssignmentExpression": {
+        "array": true,
+        "object": false
+      }
+    }],	
     "prefer-rest-params": "error",
     "prefer-spread": "error",
     "prefer-template": "error",
