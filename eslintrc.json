@@ -48,8 +48,8 @@
     "no-unsafe-negation": "error",
     "require-atomic-updates": "error",
     "use-isnan": "error",
-    "valid-jsdoc": "error",
     "valid-typeof": ["error", { "requireStringLiterals": true }],
+
     "array-callback-return": "error",
     "block-scoped-var": "error",
     "curly": "error",

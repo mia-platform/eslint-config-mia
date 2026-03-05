@@ -16,14 +16,14 @@
 
 ### Requirements
 
-- Node.js 16+
+- Node.js 18+
 
 ### Install
 
 You can easily install the package with npm:
 
 ```sh
-npm install --save-dev @mia-platform/eslint-config-mia eslint@^#.#.#
+npm install --save-dev @mia-platform/eslint-config-mia eslint@^9.0.0
 ```
 
 The package require [`eslint`](https://github.com/eslint/eslint) to work, to list the correct version you can run:
@@ -38,14 +38,31 @@ To be sure to install a compatible `eslint-config-mia` version, you can also che
 | -------------- | ------------------------- |
 | 6.8.0          | 3.0.0                     |
 | 8.x            | 8.0.0                     |
+| 9.x            | 9.0.0                     |
 
 
 ## How to use it
 
-ESLint Shareable Configs are meant to work with the `extends` feature of the `.eslintrc` file.
-You can learn more about [Shareable Config][share-config] on the official ESLint website.
+### ESLint v9 (flat config)
 
-To set up the config add a file named `.eslintrc` with this content:
+ESLint v9 uses the new [flat config](https://eslint.org/docs/latest/use/configure/configuration-files) format by default.
+The `@eslint/eslintrc` package is bundled with ESLint v9, so no additional installation is required.
+To use this config in your `eslint.config.js`:
+
+```js
+const { FlatCompat } = require('@eslint/eslintrc')
+const path = require('path')
+
+const compat = new FlatCompat({ baseDirectory: __dirname })
+
+module.exports = [
+  ...compat.extends('@mia-platform/eslint-config-mia'),
+]
+```
+
+### ESLint v9 (legacy mode)
+
+If you are still using the legacy eslintrc format, you can opt-in by setting `ESLINT_USE_FLAT_CONFIG=false` and adding a `.eslintrc` file:
 
 ```json
 {
@@ -53,28 +70,17 @@ To set up the config add a file named `.eslintrc` with this content:
 }
 ```
 
-Then you can override settings from the shareable configuration by adding them directly
-into your `.eslintrc` file.
+### ESLint shareable config
 
-Or you can add this snippet in your `package.json` and add the override inside the `eslintConfig`
-object:
-
-```json
-"eslintConfig": {
-  "extends": "@mia-platform/eslint-config-mia"
-}
-```
-
-Then you can add a new script in your `package.json` like this:
+You can also add a `lint` script in your `package.json`:
 
 ```json
 "scripts": {
-  "lint": "eslint . --ignore-path .gitignore"
+  "lint": "eslint ."
 }
 ```
 
-The `--ignore-path` can be ignored (🙃) if you already have a `.eslintignore` file. We raccomend to use it
-for avoiding to parse and lint files that will not be committed.
+Then you can override rules by adding them directly into your `eslint.config.js`.
 
 ## Badge
 
