@@ -12,60 +12,33 @@
 
 ## Getting Started
 
+
+
 ### Requirements
 
 - Node.js 16+
 
 ### Install
 
-The package require `eslint` to work, to list the correct version you can run:
+You can easily install the package with npm:
+
+```sh
+npm install --save-dev @mia-platform/eslint-config-mia eslint@^#.#.#
+```
+
+The package require [`eslint`](https://github.com/eslint/eslint) to work, to list the correct version you can run:
 
 ```sh
 npm info "@mia-platform/eslint-config-mia@latest" peerDependencies
 ```
 
-### NPM 5+
+To be sure to install a compatible `eslint-config-mia` version, you can also check this table:
 
-You can run this command:
+| eslint version | eslint-config-mia version |
+| -------------- | ------------------------- |
+| 6.8.0          | 3.0.0                     |
+| 8.x            | 8.0.0                     |
 
-```sh
-npx install-peerdeps --dev @mia-platform/eslint-config-mia
-```
-
-### NPM <5
-
-#### Linux/macOS
-
-You can run this command:
-
-```sh
-(
-export PKG="@mia-platform/eslint-config-mia";
-  npm info "${PKG}@latest" peerDependencies --json | command sed 's/[\{\},]//g ; s/: /@/g' | xargs npm install --save-dev "${PKG}@latest"
-)
-```
-
-Which produces and runs a command like:
-
-```sh
-npm install --save-dev @mia-platform/eslint-config-mia eslint@^#.#.#
-```
-
-#### Windows
-
-If using **npm < 5**, Windows users can either install all the peer dependencies manually,
-or use the [install-peerdeps](https://github.com/nathanhleung/install-peerdeps) cli tool.
-
-```sh
-npm install -g install-peerdeps
-install-peerdeps --dev @mia-platform/eslint-config-mia
-```
-
-The cli will produce and run a command like:
-
-```sh
-npm install --save-dev @mia-platform/eslint-config-mia eslint@^#.#.#
-```
 
 ## How to use it
 
