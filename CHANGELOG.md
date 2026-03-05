@@ -4,22 +4,20 @@ All notable changes to this project will be documented in this file.
 The format is based on [Keep a Changelog](https://keepachangelog.com/en/1.0.0/),
 and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0.html).
 
-### Changed
-
-- Allow variable reassignment without object destructuring
-
 ## v8.0.0 - 2026-03-05
 
 ### BREAKING CHANGES
 
-- Add new import order to be more strictly
 - Drop support for Node versions < 16
+- Update minimum version of eslint as peerDependency to `8.0.0`
+- Add new import order to be more strictly
 
 ### Changed
 
 - Add explicit `import` plugin declaration in the shared ESLint config
 - Migrate ESLint validation test from `CLIEngine` to `ESLint` API
 - Update unit test script to run test files directly with Node
+- Allow variable reassignment without object destructuring
 
 ## v3.0.0 - 2020-03-14
 
