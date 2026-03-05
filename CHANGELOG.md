@@ -4,6 +4,16 @@ All notable changes to this project will be documented in this file.
 The format is based on [Keep a Changelog](https://keepachangelog.com/en/1.0.0/),
 and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0.html).
 
+## Unreleased
+
+- Remove `eslintrc.json` and migrate all rules to native ESLint v9 flat config in `eslint.config.js`
+- Move `eslint-plugin-import` from `peerDependencies` to `dependencies`
+- Add `globals` as a direct dependency for flat config environment mapping
+- Update `index.js` to export the flat config array (shareable configs)
+- Update unit tests to validate flat config array structure
+
+## v9.0.0 - 2026-03-05
+
 ### BREAKING CHANGES
 
 - Update ESLint to v9 (latest v9 release)
