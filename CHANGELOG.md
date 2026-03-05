@@ -4,6 +4,26 @@ All notable changes to this project will be documented in this file.
 The format is based on [Keep a Changelog](https://keepachangelog.com/en/1.0.0/),
 and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0.html).
 
+## v10.0.0 - 2026-03-05
+
+### BREAKING CHANGES
+
+- Update ESLint to v10 (latest v10 release)
+- Drop support for Node versions < 20.19.0
+- Drop support for ESLint versions < 10
+- Remove deprecated Node.js-specific rules (`callback-return`, `global-require`, `handle-callback-err`, `no-new-require`, `no-path-concat`, `no-process-exit`, `no-sync`)
+- Remove deprecated `no-return-await` rule
+
+### Changed
+
+- Replace deprecated `id-blacklist` rule with `id-denylist`
+- Replace deprecated `no-new-object` rule with `no-object-constructor`
+- Replace deprecated `no-new-symbol` rule with `no-new-native-nonconstructor`
+- Update `.nvmrc` to use Node v24
+- Update GitHub Actions CI to test on Node.js v20, v22 and v24
+
+## v9.0.0 - 2026-03-05
+
 ### BREAKING CHANGES
 
 - Update ESLint to v9 (latest v9 release)

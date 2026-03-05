@@ -1,6 +1,6 @@
 {
   "name": "@mia-platform/eslint-config-mia",
-  "version": "9.0.0",
+  "version": "10.0.0",
   "description": "Mia-Platform javascript lint rules",
   "keyword": [
     "mia-platform",
@@ -45,10 +45,10 @@
     "tap": "^21.6.2"
   },
   "peerDependencies": {
-    "eslint": "^9.0.0"
+    "eslint": "^10.0.0"
   },
   "engines": {
-    "node": ">=18"
+    "node": ">=20.19.0"
   },
   "dependencies": {
     "eslint-plugin-import": "^2.32.0",
