@@ -16,14 +16,14 @@
 
 ### Requirements
 
-- Node.js 16+
+- Node.js 18+
 
 ### Install
 
 You can easily install the package with npm:
 
 ```sh
-npm install --save-dev @mia-platform/eslint-config-mia eslint@^#.#.#
+npm install --save-dev @mia-platform/eslint-config-mia eslint@^9.0.0
 ```
 
 The package require [`eslint`](https://github.com/eslint/eslint) to work, to list the correct version you can run:
@@ -38,43 +38,48 @@ To be sure to install a compatible `eslint-config-mia` version, you can also che
 | -------------- | ------------------------- |
 | 6.8.0          | 3.0.0                     |
 | 8.x            | 8.0.0                     |
+| 9.x            | 9.0.0                     |
 
 
 ## How to use it
 
-ESLint Shareable Configs are meant to work with the `extends` feature of the `.eslintrc` file.
-You can learn more about [Shareable Config][share-config] on the official ESLint website.
+### ESLint v9 (flat config)
 
-To set up the config add a file named `.eslintrc` with this content:
+This package exports an ESLint v9 [flat config](https://eslint.org/docs/latest/use/configure/configuration-files) array.
+Spread it directly into your `eslint.config.js`:
 
-```json
-{
-  "extends": "@mia-platform/eslint-config-mia"
-}
+```js
+const miaConfig = require('@mia-platform/eslint-config-mia')
+
+module.exports = [
+  ...miaConfig,
+]
 ```
 
-Then you can override settings from the shareable configuration by adding them directly
-into your `.eslintrc` file.
+### Adding a lint script
 
-Or you can add this snippet in your `package.json` and add the override inside the `eslintConfig`
-object:
-
-```json
-"eslintConfig": {
-  "extends": "@mia-platform/eslint-config-mia"
-}
-```
-
-Then you can add a new script in your `package.json` like this:
+Add a `lint` script in your `package.json`:
 
 ```json
 "scripts": {
-  "lint": "eslint . --ignore-path .gitignore"
+  "lint": "eslint ."
 }
 ```
 
-The `--ignore-path` can be ignored (🙃) if you already have a `.eslintignore` file. We raccomend to use it
-for avoiding to parse and lint files that will not be committed.
+Then you can override rules by adding additional config objects to your `eslint.config.js`:
+
+```js
+const miaConfig = require('@mia-platform/eslint-config-mia')
+
+module.exports = [
+  ...miaConfig,
+  {
+    rules: {
+      // your overrides here
+    },
+  },
+]
+```
 
 ## Badge
 

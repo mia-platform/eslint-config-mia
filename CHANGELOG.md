@@ -4,6 +4,21 @@ All notable changes to this project will be documented in this file.
 The format is based on [Keep a Changelog](https://keepachangelog.com/en/1.0.0/),
 and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0.html).
 
+### BREAKING CHANGES
+
+- Update ESLint to v9 (latest v9 release)
+- Drop support for Node versions < 18
+- Drop support for ESLint versions < 9
+- Remove `valid-jsdoc` rule (removed from ESLint v9 core)
+
+### Changed
+
+- Remove `eslintrc.json` and migrate all rules to native ESLint v9 flat config in `eslint.config.js`
+- Move `eslint-plugin-import` from `peerDependencies` to `dependencies`
+- Update validation test to use `LegacyESLint` from `eslint/use-at-your-own-risk`
+- Update `tap` to v21
+- Update GitHub Actions CI to test on Node.js v18, v20 and v22
+
 ## v8.0.0 - 2026-03-05
 
 ### BREAKING CHANGES

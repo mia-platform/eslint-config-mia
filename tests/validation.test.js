@@ -5,8 +5,7 @@ const t = require('tap')
 
 t.test('Validate configurations with eslint to assure all rule syntax is correct', async t => {
   const cli = new ESLint({
-    useEslintrc: false,
-    overrideConfigFile: 'eslintrc.json',
+    overrideConfigFile: 'eslint.config.js',
     errorOnUnmatchedPattern: false,
   })
 

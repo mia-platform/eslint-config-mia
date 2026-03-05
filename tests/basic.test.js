@@ -9,9 +9,11 @@ function isObject(obj) {
 }
 
 t.test('test basic properties of config', t => {
-  t.ok(isObject(config.parserOptions))
-  t.ok(isObject(config.env))
-  t.ok(isObject(config.rules))
-  t.ok(isObject(config.overrides))
+  t.ok(Array.isArray(config), 'config should be an array')
+  const [mainConfig, testOverrideConfig] = config
+  t.ok(isObject(mainConfig.languageOptions), 'main config has languageOptions')
+  t.ok(isObject(mainConfig.plugins), 'main config has plugins')
+  t.ok(isObject(mainConfig.rules), 'main config has rules')
+  t.ok(isObject(testOverrideConfig.rules), 'test override config has rules')
   t.end()
 })
