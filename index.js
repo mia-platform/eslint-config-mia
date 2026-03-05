@@ -1,3 +1,5 @@
 'use strict'
 
-module.exports = require('./eslintrc')
+const { sharedConfigs } = require('./eslint.config.js')
+
+module.exports = sharedConfigs

@@ -45,34 +45,20 @@ To be sure to install a compatible `eslint-config-mia` version, you can also che
 
 ### ESLint v9 (flat config)
 
-ESLint v9 uses the new [flat config](https://eslint.org/docs/latest/use/configure/configuration-files) format by default.
-The `@eslint/eslintrc` package is bundled with ESLint v9, so no additional installation is required.
-To use this config in your `eslint.config.js`:
+This package exports an ESLint v9 [flat config](https://eslint.org/docs/latest/use/configure/configuration-files) array.
+Spread it directly into your `eslint.config.js`:
 
 ```js
-const { FlatCompat } = require('@eslint/eslintrc')
-const path = require('path')
-
-const compat = new FlatCompat({ baseDirectory: __dirname })
+const miaConfig = require('@mia-platform/eslint-config-mia')
 
 module.exports = [
-  ...compat.extends('@mia-platform/eslint-config-mia'),
+  ...miaConfig,
 ]
 ```
 
-### ESLint v9 (legacy mode)
+### Adding a lint script
 
-If you are still using the legacy eslintrc format, you can opt-in by setting `ESLINT_USE_FLAT_CONFIG=false` and adding a `.eslintrc` file:
-
-```json
-{
-  "extends": "@mia-platform/eslint-config-mia"
-}
-```
-
-### ESLint shareable config
-
-You can also add a `lint` script in your `package.json`:
+Add a `lint` script in your `package.json`:
 
 ```json
 "scripts": {
@@ -80,7 +66,20 @@ You can also add a `lint` script in your `package.json`:
 }
 ```
 
-Then you can override rules by adding them directly into your `eslint.config.js`.
+Then you can override rules by adding additional config objects to your `eslint.config.js`:
+
+```js
+const miaConfig = require('@mia-platform/eslint-config-mia')
+
+module.exports = [
+  ...miaConfig,
+  {
+    rules: {
+      // your overrides here
+    },
+  },
+]
+```
 
 ## Badge
 

@@ -45,10 +45,13 @@
     "tap": "^21.6.2"
   },
   "peerDependencies": {
-    "eslint": "^9.0.0",
-    "eslint-plugin-import": "^2.32.0"
+    "eslint": "^9.0.0"
   },
   "engines": {
     "node": ">=18"
+  },
+  "dependencies": {
+    "eslint-plugin-import": "^2.32.0",
+    "globals": "^17.4.0"
   }
 }

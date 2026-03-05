@@ -1,12 +1,11 @@
 'use strict'
 
-const { LegacyESLint } = require('eslint/use-at-your-own-risk')
+const { ESLint } = require('eslint')
 const t = require('tap')
 
 t.test('Validate configurations with eslint to assure all rule syntax is correct', async t => {
-  const cli = new LegacyESLint({
-    useEslintrc: false,
-    overrideConfigFile: 'eslintrc.json',
+  const cli = new ESLint({
+    overrideConfigFile: 'eslint.config.js',
     errorOnUnmatchedPattern: false,
   })
 
