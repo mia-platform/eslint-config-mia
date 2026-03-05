@@ -41,7 +41,7 @@
     "version": "./scripts/update-version.sh ${npm_package_version} && git add CHANGELOG.md"
   },
   "devDependencies": {
-    "eslint": "^9.39.3",
+    "eslint": "^10.0.2",
     "tap": "^21.6.2"
   },
   "peerDependencies": {
