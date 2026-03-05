@@ -1,14 +1,20 @@
 'use strict'
 
-const { CLIEngine } = require('eslint')
+const { ESLint } = require('eslint')
 const t = require('tap')
 
-t.test('Validate configurations with eslint to assure all rule syntax is correct', t => {
-  const cli = new CLIEngine({
+t.test('Validate configurations with eslint to assure all rule syntax is correct', async t => {
+  const cli = new ESLint({
     useEslintrc: false,
-    configFile: 'eslintrc.json',
+    overrideConfigFile: 'eslintrc.json',
+    errorOnUnmatchedPattern: false,
   })
 
-  t.strictSame(cli.executeOnFiles(['.']).errorCount, 0)
+  const lintResult = await cli.lintFiles(['.'])
+  const errorCount = lintResult.reduce((total, result) => {
+    return total + result.errorCount
+  }, 0)
+
+  t.strictSame(errorCount, 0)
   t.end()
 })

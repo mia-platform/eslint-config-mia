@@ -12,6 +12,10 @@
 
 ## Getting Started
 
+### Requirements
+
+- Node.js 16+
+
 ### Install
 
 The package require `eslint` to work, to list the correct version you can run:

@@ -9,6 +9,9 @@
     "node": true,
     "es6": true
   },
+  "plugins": [
+    "import"
+  ],
   "rules": {
     "for-direction": "error",
     "getter-return": "error",

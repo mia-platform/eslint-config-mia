@@ -1,7 +1,8 @@
 'use strict'
 
-const config = require('../')
 const t = require('tap')
+
+const config = require('../')
 
 function isObject(obj) {
   return typeof obj === 'object' && obj !== null

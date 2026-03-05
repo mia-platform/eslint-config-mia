@@ -9,6 +9,13 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 ### BREAKING CHANGES
 
 - Add new import order to be more strictly
+- Drop support for Node versions < 16
+
+### Changed
+
+- Add explicit `import` plugin declaration in the shared ESLint config
+- Migrate ESLint validation test from `CLIEngine` to `ESLint` API
+- Update unit test script to run test files directly with Node
 
 ## v3.0.0 - 2020-03-14
 
