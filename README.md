@@ -69,7 +69,7 @@ npm install --save-dev @mia-platform/eslint-config-mia eslint@^#.#.#
 
 ## How to use it
 
-ESLint Shareable Configs are meant to work with the `extends` feature of the `.eslintrc` file.  
+ESLint Shareable Configs are meant to work with the `extends` feature of the `.eslintrc` file.
 You can learn more about [Shareable Config][share-config] on the official ESLint website.
 
 To set up the config add a file named `.eslintrc` with this content:
