@@ -1,7 +1,7 @@
 'use strict'
 
 const globals = require('globals')
-const importPlugin = require('eslint-plugin-import')
+const importPlugin = require('eslint-plugin-import-x')
 
 const rules = {
   'for-direction': 'error',
@@ -76,7 +76,6 @@ const rules = {
   'no-proto': 'error',
   'no-redeclare': ['error', { builtinGlobals: false }],
   'no-return-assign': 'error',
-  'no-return-await': 'error',
   'no-script-url': 'error',
   'no-self-assign': 'error',
   'no-self-compare': 'error',
@@ -105,13 +104,6 @@ const rules = {
   'no-undef-init': 'error',
   'no-unused-vars': 'error',
   'no-use-before-define': ['error', { functions: false }],
-  'callback-return': ['error', ['callback', 'cb', 'next', 'done']],
-  'global-require': 'error',
-  'handle-callback-err': 'error',
-  'no-new-require': 'error',
-  'no-path-concat': 'error',
-  'no-process-exit': 'error',
-  'no-sync': 'warn',
   'array-bracket-spacing': ['error', 'never'],
   'block-spacing': ['error', 'always'],
   'brace-style': ['error', '1tbs', { allowSingleLine: true }],
@@ -134,7 +126,7 @@ const rules = {
   'func-name-matching': 'error',
   'func-names': ['error', 'as-needed'],
   'func-style': ['error', 'declaration', { allowArrowFunctions: true }],
-  'id-blacklist': ['error', 'e', 'er', 'err', 'cb'],
+  'id-denylist': ['error', 'e', 'er', 'err', 'cb'],
   'id-length': ['error', {
     min: 2,
     properties: 'never',
@@ -173,7 +165,7 @@ const rules = {
   'no-multi-assign': 'error',
   'no-multiple-empty-lines': ['error', { max: 1 }],
   'no-nested-ternary': 'error',
-  'no-new-object': 'error',
+  'no-object-constructor': 'error',
   'no-plusplus': ['error', { allowForLoopAfterthoughts: true }],
   'no-tabs': 'error',
   'no-trailing-spaces': 'error',
@@ -214,7 +206,7 @@ const rules = {
   'no-const-assign': 'error',
   'no-dupe-class-members': 'error',
   'no-duplicate-imports': 'error',
-  'no-new-symbol': 'error',
+  'no-new-native-nonconstructor': 'error',
   'no-this-before-super': 'error',
   'no-useless-computed-key': 'error',
   'no-useless-constructor': 'error',
@@ -233,7 +225,7 @@ const rules = {
   'require-yield': 'error',
   'rest-spread-spacing': 'error',
   'sort-imports': 0,
-  'import/order': ['error', {
+  'import-x/order': ['error', {
     groups: [['builtin', 'external']],
     'newlines-between': 'always',
   }],
@@ -270,7 +262,7 @@ const sharedConfigs = [
       },
     },
     plugins: {
-      import: importPlugin,
+      'import-x': importPlugin,
     },
     rules,
   },

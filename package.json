@@ -41,17 +41,17 @@
     "version": "./scripts/update-version.sh ${npm_package_version} && git add CHANGELOG.md"
   },
   "devDependencies": {
-    "eslint": "^9.39.3",
+    "eslint": "^10.0.2",
     "tap": "^21.6.2"
   },
   "peerDependencies": {
-    "eslint": "^9.0.0"
+    "eslint": "^10.0.0"
   },
   "engines": {
-    "node": ">=18"
+    "node": ">=20.19.0"
   },
   "dependencies": {
-    "eslint-plugin-import": "^2.32.0",
+    "eslint-plugin-import-x": "^4.16.2",
     "globals": "^17.4.0"
   }
 }
