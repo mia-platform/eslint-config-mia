@@ -6,13 +6,6 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 ## Unreleased
 
-### Changed
-
-- Replace `eslint-plugin-import` with `eslint-plugin-import-x` for ESLint v10 compatibility
-- Rename `import/order` rule to `import-x/order`
-
-## v10.0.0 - 2026-03-05
-
 ### BREAKING CHANGES
 
 - Update ESLint to v10 (latest v10 release)
@@ -28,6 +21,8 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 - Replace deprecated `no-new-symbol` rule with `no-new-native-nonconstructor`
 - Update `.nvmrc` to use Node v24
 - Update GitHub Actions CI to test on Node.js v20, v22 and v24
+- Replace `eslint-plugin-import` with `eslint-plugin-import-x` for ESLint v10 compatibility
+- Rename `import/order` rule to `import-x/order`
 
 ## v9.0.0 - 2026-03-05
 
