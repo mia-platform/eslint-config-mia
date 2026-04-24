@@ -1,7 +1,7 @@
 'use strict'
 
 const globals = require('globals')
-const importPlugin = require('eslint-plugin-import')
+const importPlugin = require('eslint-plugin-import-x')
 
 const rules = {
   'for-direction': 'error',
@@ -225,7 +225,7 @@ const rules = {
   'require-yield': 'error',
   'rest-spread-spacing': 'error',
   'sort-imports': 0,
-  'import/order': ['error', {
+  'import-x/order': ['error', {
     groups: [['builtin', 'external']],
     'newlines-between': 'always',
   }],
@@ -262,7 +262,7 @@ const sharedConfigs = [
       },
     },
     plugins: {
-      import: importPlugin,
+      'import-x': importPlugin,
     },
     rules,
   },

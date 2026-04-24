@@ -51,7 +51,7 @@
     "node": ">=20.19.0"
   },
   "dependencies": {
-    "eslint-plugin-import": "^2.32.0",
+    "eslint-plugin-import-x": "^4.16.2",
     "globals": "^17.4.0"
   }
 }
